@@ -1133,29 +1133,131 @@ html {
     }
 }
 
-/* Hero heading size */
+/* =================================
+   HERO HEADING - ALL SCREEN SIZES
+================================= */
+
 .hero-title {
     font-size: clamp(2.5rem, 5vw, 5rem) !important;
     line-height: 1.2;
     white-space: nowrap;
 }
 
-/* Animated name size */
 .hero-title .button {
-    font-size: clamp(2.5rem, 5vw, 5rem) !important;
+    font-size: inherit !important;
     white-space: nowrap;
 }
 
-/* Keep both animation layers consistent */
 .hero-title .actual-text,
 .hero-title .hover-text {
     font-size: inherit;
+    white-space: nowrap;
 }
 
-/* Mobile */
-@media (max-width: 576px) {
+
+/* =================================
+   TABLET AND MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    .button {
+        --fs-size: 1.2em;
+    }
+
+    .loading-text span {
+        font-size: 55px;
+    }
+
+    .download-label {
+        width: 150px;
+    }
+
+    .download-title {
+        font-size: 14px;
+    }
+
+    /* Hero heading */
     .hero-title {
-        font-size: clamp(1.65rem, 7vw, 2.5rem) !important;
+        font-size: clamp(2rem, 6vw, 3.5rem) !important;
+    }
+
+    .hero-title .button {
+        font-size: inherit !important;
+        letter-spacing: normal;
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 576px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 50px 16px;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero-right img {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .code-box {
+        padding: 15px;
+        font-size: .8rem;
+    }
+
+    /* General headings */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.2rem !important;
+    }
+
+    /* Preserve larger hero heading */
+    .hero-title {
+        font-size: clamp(1.8rem, 7vw, 2.5rem) !important;
+    }
+
+    .hero-title .button {
+        font-size: inherit !important;
+    }
+
+    .button {
+        --fs-size: 1em;
+    }
+
+    .wrapper {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+
+/* =================================
+   EXTRA SMALL MOBILE
+================================= */
+
+@media (max-width: 380px) {
+
+    .hero-title {
+        font-size: 1.65rem !important;
     }
 
     .hero-title .button {
