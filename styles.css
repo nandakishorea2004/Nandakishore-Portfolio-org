@@ -1104,21 +1104,6 @@ html {
     }
 
 
-/* Responsive Hero Name Animation */
-.button {
-    white-space: nowrap;
-    font-size: clamp(1.5rem, 4vw, 3.5rem);
-    padding: 0;
-    max-width: 100%;
-}
-
-/* Keep the name on a single line */
-.actual-text,
-.hover-text {
-    white-space: nowrap;
-    display: inline-block;
-}
-
 /* Mobile screens */
 @media screen and (max-width: 768px) {
     .display-4 {
