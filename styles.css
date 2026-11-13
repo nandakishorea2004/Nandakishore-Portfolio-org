@@ -1133,5 +1133,35 @@ html {
     }
 }
 
+/* Hero heading size */
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 5rem) !important;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+/* Animated name size */
+.hero-title .button {
+    font-size: clamp(2.5rem, 5vw, 5rem) !important;
+    white-space: nowrap;
+}
+
+/* Keep both animation layers consistent */
+.hero-title .actual-text,
+.hero-title .hover-text {
+    font-size: inherit;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: clamp(1.65rem, 7vw, 2.5rem) !important;
+    }
+
+    .hero-title .button {
+        font-size: inherit !important;
+    }
+}
+
 
 }
